@@ -12,7 +12,7 @@
     > Specificity determines what properties to apply to an element if there are conflicting properties. It picks the highest value (usually the most specific) and applies those properties.
 
 05. What problems do you think you could run into if you over-utilized the `!important` feature?
-    > 
+    > If you over-utilize the !important feature it would override any styles you want applied to your elements. This would be difficult to apply styles to target multiple elements because your !important feature would override it.
 
 06. What are the three components that makeup a `CSS` rule? <br> Example:
 
@@ -22,7 +22,7 @@
         }
     ```
 
-    > | ANSWER HERE |
+    > Three components that make up a CSS rule are the selector, what the rule is targeting. The property, what thing you would like to change. The value is the last component this is what you assign the property to.  ex p{color: blue}  p would be the selector because it targets the p tags, color would be the property because it says to change the color, and blue would be the value because it is assigned to the property.
 
 07. How do you think good design influences people when visiting a website, and what sorts of things could you convey through design alone?
     > | ANSWER HERE |
