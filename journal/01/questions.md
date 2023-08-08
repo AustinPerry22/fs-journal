@@ -1,18 +1,18 @@
 # Foundations of Web Development
 01. In your own words, why do we use Git?
-    > We use git to push our code to a source control.
+    > We use git to push our code to a source control, so we can have multiple versions of a project.
 
 02. In the terminal, what is the command `mkdir` used for?
     > This is used to create a new folder/directory.
 
 03. What is a ***pseudo-class*** and what are some of the most common ones you think you will use?
-    > | ANSWER HERE |
+    > 
 
 04. What is ***specificity*** and how might you use it to your benefit?
-    > | ANSWER HERE |
+    > Specificity determines what properties to apply to an element if there are conflicting properties. It picks the highest value (usually the most specific) and applies those properties.
 
 05. What problems do you think you could run into if you over-utilized the `!important` feature?
-    > | ANSWER HERE |
+    > 
 
 06. What are the three components that makeup a `CSS` rule? <br> Example:
 
