@@ -6,7 +6,7 @@
     > This is used to create a new folder/directory.
 
 03. What is a ***pseudo-class*** and what are some of the most common ones you think you will use?
-    > 
+    > A pseudo-class is a selector that only applies to elements when they are in a certain state for example if you use the :hover pseudo-class then the pseudo-class only applies to the button when it is being hovered over. Some common ones I think I will use are :hover, :fullscreen, :enabled, :disabled, and :required.
 
 04. What is ***specificity*** and how might you use it to your benefit?
     > Specificity determines what properties to apply to an element if there are conflicting properties. It picks the highest value (usually the most specific) and applies those properties.
