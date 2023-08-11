@@ -25,16 +25,16 @@
     > Three components that make up a CSS rule are the selector, what the rule is targeting. The property, what thing you would like to change. The value is the last component this is what you assign the property to.  ex p{color: blue}  p would be the selector because it targets the p tags, color would be the property because it says to change the color, and blue would be the value because it is assigned to the property.
 
 07. How do you think good design influences people when visiting a website, and what sorts of things could you convey through design alone?
-    > | ANSWER HERE |
+    > I think good design can influence people by leaving an impression of wether the company/org is trustworthy/ up-to-date/ etc. Some things you can convey through design is the tone of the site, the accessability, and the flow/readability.
 
 08. What is the purpose of ***wireframing***?
-    > | ANSWER HERE |
+    > The purpose of wireframing is to help convey ideas for a site, without needing to write out every detail. This can help save time and energy by having a design to work from. 
 
 09. Do you think wireframes are worth the time, energy, and effort that they require? Why or Why not?
-    > | ANSWER HERE |
+    > I think that wireframes are usually worth the time and energy. If you are building a really basic site, then it probably isn't worth it, but otherwise I think having a wireframe could help you get a feel for the site without having to spend the time and energy coding it all.
 
 10. Define the display `:flex property:`
-    > | ANSWER HERE |
+    > The display flex property is used in css to change how elements appear on the screen. With display: flex the elements can appear next to each other instead of above/below.
 
 11. What `CSS` properties affect the size of a box model?
-    > | ANSWER HERE |
+    > The CSS properties that can affect the size of a box model are height and width. These properties change how large the box is.
