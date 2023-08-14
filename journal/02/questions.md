@@ -5,7 +5,7 @@
 
 02. What is the definition of a function?
 
-    > A function is a subprogram that carries out a specific task.
+    > A function is a part of the program that carries out a specific task.
 
 03. What are the `SOLID` principles?
 
@@ -50,8 +50,10 @@
 
 09. What is the difference between a `primitive` value and a `reference` value?
 
-    > | ANSWER HERE |
+    > A primitive value contains the actual string, number, bool, while the reference value points to the string, number, bool in memory.
 
 10. Demonstrate a loop that prints the numbers between -100 and 100?
 
-    > | ANSWER HERE |
+    > for(i=-100; i<=100; i++){
+        console.log(i);
+    }
