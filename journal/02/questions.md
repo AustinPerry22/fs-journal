@@ -39,7 +39,7 @@
 
 06. Give an example of a JavaScript `Conditional`:
 
-    > an if statement is a conditional in js. 
+    > An if statement is a conditional in javascript. 
 
 07. What is the main difference between `parameters` and `arguments`?
 
