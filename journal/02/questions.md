@@ -9,7 +9,7 @@
 
 03. What are the `SOLID` principles?
 
-    > | ANSWER HERE |
+    > The solid principles are 5 important principles to follow when using object oriented programming. They are, the Single responsibility principle, the Open-closed principle, the Liskov subsitution principle, the Interface segregation principle and the Dependancy inversion pricipel.
 
 04. Given this array: How could you remove the `pineapple`?
 
@@ -17,7 +17,7 @@
     let fruit = ['apple', 'banana', 'pineapple', 'orange', 'strawberry']
     ```
 
-    > | ANSWER HERE |
+    > fruit[2].pop()
 
 05. Given these two objects: How could you add each to the others friends arrays?
 
@@ -34,11 +34,11 @@
     }
     ```
 
-    > | ANSWER HERE |
+    > you.friends.push(them)        them.friends.push(you)
 
 06. Give an example of a JavaScript `Conditional`:
 
-    > | ANSWER HERE |
+    > an if statement is a conditional in js. 
 
 07. What is the main difference between `parameters` and `arguments`?
 
