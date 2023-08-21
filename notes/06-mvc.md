@@ -67,6 +67,13 @@ the router is in charge of making an instance of the controllers
 
 
 
+1. build model and properties
+2. create data using the model in the appstate
+3. create a controller, have controller draw data
+4. add interaction to page elements
+5. the rest of it....
+
+
 
 
 
