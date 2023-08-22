@@ -86,6 +86,19 @@ router
 in service at bottom. this allows users not to access the service.
 export const ClassName = new ClassName()
 
+/** @type {Data Type} this is a comment*/  - put above a null variable to allow use to use intellisense
+
+in constructors you can add listeners - when something changes do something
+ex.
+Appstate.on('myVar', this.myFunc)
+
+ctrl . to create a method in where you are referencing
+
+Appstate.emit('property') - forces the listener for the property to trigger
+
+to use local storage create classes using data objects.
+
+
 
 
 
