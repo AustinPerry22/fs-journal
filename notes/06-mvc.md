@@ -21,11 +21,6 @@ bcw create - creates files, starter template
 models be built first
 class is like an outline/blueprint, doesn't make a character\object
 class MyChar{
-    name
-    role
-    health
-    maxHealth
-
     constructor(newName, newRole, newMaxHealth){  -method that runs anytime you make an instance of the class
         this.name = newName
         this.role = newRole
@@ -42,7 +37,6 @@ class MyChar{
     creates an instance/object from the class
 let hobbit = new MyChar()
 
-    t
 
 a member is any object/fn/data in a class
 this.   is for an class instance to look at itself.
@@ -65,13 +59,40 @@ the router is in charge of making an instance of the controllers
 
 
 
-
-
 1. build model and properties
-2. create data using the model in the appstate
+2. create data using the model in the Appstate
 3. create a controller, have controller draw data
 4. add interaction to page elements
 5. the rest of it....
+
+you don't need to define properties in the model, just need to use in the constructor
+
+constructors can take in the same parameters as class properties
+ex.
+constructor(name){
+    this.name = name
+}
+
+write out templates in index then transfer to the template.
+
+
+
+router
+    to add multiple controllers to a page put in an array on the router.
+
+    when the page loads it looks at the URL and matches it with a path then loads the corresponding controllers and injects the view into the index.html id #router-view
+
+
+in service at bottom. this allows users not to access the service.
+export const ClassName = new ClassName()
+
+
+
+
+
+
+
+
 
 
 
