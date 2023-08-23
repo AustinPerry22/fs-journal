@@ -98,6 +98,45 @@ Appstate.emit('property') - forces the listener for the property to trigger
 
 to use local storage create classes using data objects.
 
+in constructor of model pass in objects for local storage+forms
+
+to make a private function move it outside of the class and use _nameConvention
+
+Forms
+-use bootstrap elements 4 now, but not just their default form.
+look at docs for elements to use
+to submit form have button have type of 'submit'
+<form onsumbit="">  - calls functions when submiting form
+
+name property on form input   <input name ="jeff">
+
+window.event.preventDefault() - prevents stuff from refreshing on submit
+required property makes it required to fill out./ other stuff like minLength, etc.
+const formEvent = window.event.target - grabs the form elem from on submit 
+
+const formData = getFormData(formEvent) is the same as
+                                            |
+                                            v
+const formData = {
+    key: form.name.value
+    key: form.name.value
+    jeff: form.jeff.value  - value is what the user puts in.
+}
+
+names should be the same as the object properties you want to store the values in
+
+use save functions to save stuff
+saveState('bannana', AppState.stuff) - utitlity function instead of JSON.stringify, etc.
+
+myStuff = loadState('key', [classname])
+
+make id's on objects so you can refrence them better
+this.id = generateId() 
+
+
+
+
+
 
 
 
