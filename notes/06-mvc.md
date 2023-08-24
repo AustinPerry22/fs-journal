@@ -133,6 +133,17 @@ myStuff = loadState('key', [classname])
 make id's on objects so you can refrence them better
 this.id = generateId() 
 
+use @type for better intellisense
+
+turnary -  1 line if statment
+
+this.reportedDate = data.reportedDate ? new Date(data.reportedData) : new Date() - if there is a reported date the use the reported date, else use new date.
+
+selectable class on html make it fancy
+
+
+
+
 
 
 
