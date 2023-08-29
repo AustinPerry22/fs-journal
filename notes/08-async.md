@@ -15,3 +15,15 @@ const response = await fetch(URL)
 
 create read update delete - CRUD methods
 
+async func{
+    try{
+        do stuff
+        await thing im requesting
+    }
+    catch(error){
+        pop error
+    }
+}
+
+static exists on the class iteslf not on each instance
+
