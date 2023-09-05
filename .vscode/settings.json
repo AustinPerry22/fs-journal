@@ -18,5 +18,8 @@
     "titleBar.inactiveBackground": "#30193499",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#301934"
+  "peacock.color": "#301934",
+  "cSpell.words": [
+    "basecontroller"
+  ]
 }
