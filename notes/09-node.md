@@ -30,6 +30,20 @@ function(request, response, next){
 logger.log('log') -console.log doesn't get eaten
 
 
+model
+
+export const mySchema = new Schema(
+    {
+        property: String,
+        property: {type: String, required: true, minlength: 3, maxlength: 15}
+        property: {type: Number, required: true, min: 1, max: 999, }
+    }
+)
+
+
+in the dbContext.js
+
+MyName = mongoose.model('name', mySchema)
 
 
 
