@@ -46,6 +46,34 @@ in the dbContext.js
 MyName = mongoose.model('name', mySchema)
 
 
+key: {type String, enum:['only', 'takes', 'these', 'strings']}
+
+in controller in the get/create/etc request
+
+const query = req.query   - gets the query from the request
+
+exhibitId: {type: Schema.Types.ObjectId, ref: 'Exhibit', required: true}  - comes from the database(objectID) and references an id specifically from the Exhibit collection
+Exhibit string matches string in the db.context
+
+a virtual gets computed then populated back onto the object - similar to a getter
+
+in schema
+    {timestamps: true, toJSON: {virtuals: true}}
+
+    outside of class
+    AnimalSchema.virtual('exhibit',{
+        localField: 'exhibitId', 
+        ref: "Exhibit"
+        foreignField: '_id',
+        justOne: true
+    })
+
+in service get/post/etc .populate('exhibit', 'property property') - default returns whole obj, property only returns those properties
+
+RESTful api conventions is the best practice form naming endpoints etc
+
+
+
 
 
 
