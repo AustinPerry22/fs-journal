@@ -58,19 +58,36 @@ Exhibit string matches string in the db.context
 a virtual gets computed then populated back onto the object - similar to a getter
 
 in schema
-    {timestamps: true, toJSON: {virtuals: true}}
+    {timestamps: true, toJSON: {virtuals: true}}  - enable time created, allows virtuals to exist
 
     outside of class
-    AnimalSchema.virtual('exhibit',{
-        localField: 'exhibitId', 
-        ref: "Exhibit"
-        foreignField: '_id',
-        justOne: true
+    AnimalSchema.virtual('exhibit',{   -name of virtual
+        localField: 'exhibitId',    -what you are refrencing in the class, usually the other object Id
+        ref: "Exhibit"              -What schema your refrencing
+        foreignField: '_id',        -what the key is on the shcema your refrencing
+        justOne: true               - if this isn't here will return an array with 1 object in it.
     })
 
 in service get/post/etc .populate('exhibit', 'property property') - default returns whole obj, property only returns those properties
 
 RESTful api conventions is the best practice form naming endpoints etc
+
+never trust ownership id's from the client 
+
+to use middleware goes vertically in router throught the middleware to be able to use the post request
+.use((req, res. next)=>{
+    do what you want
+    req.next()
+})
+.post
+
+to use Auth0 middleware
+.use(Auth0Provider.getAuthorizedUserInfo) if has token all good, if no token 401, unauthorized
+
+you can authorize postman collection in the auth tab with the token
+
+to hide emails/stuff in the populate use populate('id id id...', 'key key key') or ('id id', '-keyIdontWant')
+
 
 
 
