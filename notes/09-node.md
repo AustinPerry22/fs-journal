@@ -83,6 +83,7 @@ to use middleware goes vertically in router throught the middleware to be able t
 
 to use Auth0 middleware
 .use(Auth0Provider.getAuthorizedUserInfo) if has token all good, if no token 401, unauthorized
+tacks on userInfo, the userInfo.id should == account.id
 
 you can authorize postman collection in the auth tab with the token
 
