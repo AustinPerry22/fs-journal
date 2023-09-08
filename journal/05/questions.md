@@ -17,24 +17,24 @@
 
 05. In a/an _______ coding model, when you call a function, it returns only when the action has finished and stops your program for the time the action takes. Likewise in a/an _______ coding model, multiple things are allowed to happen at one time. When you perform an action, your program continues to run.  Fill in the blanks.
 
-  > | ANSWER HERE |
+  > Asynchronous. Synchronous.
 
 06. What are the three types of data relationships? Provide an example of each.
 
-  > | ANSWER HERE |
+  > The three types of data relashionships are one to one, one to many and many to many. One to one ex. One Car has One Engine. one to many ex. One car can have Many wheels. Many to many ex.  a BodyShop, a car can be worked on by Many mechanics and a mechanic can work on Many cars.
 
 07. What is middleware?
 
-  > | ANSWER HERE |
+  > Middleware is software that is run before the api connects with the client, ex auth0.
 
 08. The ______ pipeline delivers information from the client while the ______ pipeline returns it. Fill in the blanks. 
 
-  > | ANSWER HERE |
+  > Request. Response.
 
 09. Demonstrate the pattern that is used to include a request query with the client's `HTTP` request providing the property `tag` and the value `winter`.
 
-  > | ANSWER HERE |
+  > ?tag=winter
 
 10. What is a ***virtual property***?
 
-  > | ANSWER HERE |
+  > A virtual property is a property that isn't stored in the database, it is computed when you access it.
