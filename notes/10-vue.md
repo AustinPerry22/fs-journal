@@ -59,6 +59,20 @@ to make something reactive multiple ways
         import {reactive} from vue
             health = 100
 to get parameters they are called props
+
+
+lifecycle hooks
+onMounted(function) - runs when mounted/ brought into doc. Make sure function is defined outside of return
+onUpdated() - runs when updated
+onUnmounted() - runs when unmounted/ removed
+
+define function outside return then add function name in return.
+
+movies: computed(()=> Appstate.movies) - any time we use movies its reactive
+
+
+
+
             
 
 
