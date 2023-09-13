@@ -21,7 +21,7 @@
 
 06. Which component in Vue does the vue-router use to mount pages onto?
 
-  > The Vue uses the <vue-router></vue-router> componenet to mount the pages onto.
+  > The Vue uses the <vue-router></vue-router> componenet to mount the pages onto. router-link is used to provide what page the vue-router will show.
 
 07. What is the difference between the `AppState` and the state object within a component?
 

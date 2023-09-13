@@ -1,4 +1,4 @@
-# Vue
+r# Vue
 
 front end framework
 
@@ -63,12 +63,65 @@ to get parameters they are called props
 
 lifecycle hooks
 onMounted(function) - runs when mounted/ brought into doc. Make sure function is defined outside of return
+-also can use ()=>{} inside to run multiple stuff
 onUpdated() - runs when updated
 onUnmounted() - runs when unmounted/ removed
 
 define function outside return then add function name in return.
 
 movies: computed(()=> Appstate.movies) - any time we use movies its reactive
+
+
+in the router.js, can make new routes and link component/page to it
+
+NOTE used when clicking something take to new page, generally use these ones
+<router-link :to="{name: 'nameFromRouter.js'}> </router-link> - is like an a tag wrap around thing to click on
+
+NOTE router push should be used only for auto navigating the user when certain processes are done
+to change route in functions use
+    router = useRouter()
+    function(){
+        router.push({name: 'nameFromRouter.js'})
+    }
+
+above setup and below export default use your props
+props: {car: {type: Car, required: true}}
+
+to pass in props in the parent component/page
+<MyComponent :car="car" :id="car.id" etc./> -
+
+scss
+&:hover{
+
+}
+
+in routerlink :to"{name: 'CarDetails', params: {carId: car.id}}""
+in router when clicked on certain car
+path: '/cars/:carId', -need to pass in carId so it can link to the correct carid page
+name: 'CarDetails',
+components: CarDetailsPage
+
+PAGES NEVER TAKE IN PROPS!!!
+
+to get id out of url
+const route = useRoute()   - where you are right now/url
+route.params.carId  - gets the carId out of the url
+
+service
+async getCarById(){
+    Appstate.activeCar = null   - sets the active car to null so while its awaiting doesn't show wrong car
+    res = await blah blah
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
