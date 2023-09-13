@@ -113,7 +113,27 @@ async getCarById(){
     res = await blah blah
 }
 
+wednesday resume time
+functional resume
+proofread resume
+use numbers and stats to quantify
+keywords and terms
+projects
 
+
+dont have bad grammer/typos
+    professional email
+    bullet points
+    no photo
+    no color
+    always save and upload as a pdf
+soft and hard skills
+
+
+
+cover letter is job specific
+
+canva - use to build resume
 
 
 
