@@ -113,6 +113,46 @@ async getCarById(){
     res = await blah blah
 }
 
+in css v-bind(variable)
+cant do url(v-bind(backgroundImg))
+must pass in url(backgroundimgurl) string
+then
+v-bind(backImg)
+
+<slot name="body">
+default view if there is no body template
+</slot> in ModalWrapper. can have multiple slots with name
+in page
+<ModalWrapper> 
+    <template #body>
+        hello   - can and should be another component but can pass in anything
+    </template>
+</ModalWrapper>
+
+watchEffect(()=>{  -will run when inner values change
+    Appstate.account
+    edible.account = Appstate.account
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 wednesday resume time
 functional resume
 proofread resume
