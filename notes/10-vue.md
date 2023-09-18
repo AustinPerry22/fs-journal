@@ -146,6 +146,10 @@ backend review
 
 remember to give bearer token to postman
 
+.populate should be on end of line in a find request and after the request in create/edit
+
+services can call functions in other services
+
 
 
 
