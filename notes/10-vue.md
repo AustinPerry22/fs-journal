@@ -136,6 +136,20 @@ watchEffect(()=>{  -will run when inner values change
 
 
 
+do not change postman test content. they are written to test your backend
+- cant start with get cause no content
+
+backend review
+-schema, no constuctor
+
+{type: Sting, lowercase: true}  - makes all the string lowercase when passed in.
+
+remember to give bearer token to postman
+
+
+
+
+
 
 
 
