@@ -164,6 +164,21 @@ use user.isAuthenticated instead of account.id for v-if's because it is sent bef
 
 aspect-ratio on images great for height
 
+AlbumsSchema.virtual('memberCount', {
+    localField: '_id',    - look at my unique identifier in this document
+    foreignField: 'albumId', -look at the album id on the the other document
+    ref: 'Collaborator', - the other document
+    count: true  - creates a number for each of the matching documents. each collab with and albumId that matches this _id
+})
+  - do not do this yet
+.populate({path: 'album', populate: {path: 'creator membercount', select: '-email'}})  populate inside a populate
+
+to see if user is athenitcated use authservice and run stuff
+
+
+
+
+
 
 
 
