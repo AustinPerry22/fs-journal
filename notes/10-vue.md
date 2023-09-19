@@ -119,11 +119,18 @@ must pass in url(backgroundimgurl) string
 then
 v-bind(backImg)
 
+<slot name="header">
+default view if there is no header template
+</slot> in ModalWrapper. can have multiple slots with name
+in page
 <slot name="body">
 default view if there is no body template
 </slot> in ModalWrapper. can have multiple slots with name
 in page
 <ModalWrapper> 
+<template #header>
+        hello   - can and should be another component but can pass in anything
+    </template>
     <template #body>
         hello   - can and should be another component but can pass in anything
     </template>
@@ -149,6 +156,16 @@ remember to give bearer token to postman
 .populate should be on end of line in a find request and after the request in create/edit
 
 services can call functions in other services
+
+
+.sort in backend ('-property') sorts the stuff in reverse order
+
+use user.isAuthenticated instead of account.id for v-if's because it is sent before the account
+
+aspect-ratio on images great for height
+
+
+
 
 
 
