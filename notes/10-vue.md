@@ -179,6 +179,23 @@ to see if user is athenitcated use authservice and run stuff
 
 
 
+mini lecture #1  - postman tests
+    variables - use them in the top folder and use them like {{myvar}}
+    use the bearer token as a variable and do authorization for each call needing a token
+
+    tests are just javascript
+        pm - tools that postman has built in
+        pm.expect(res.code).to.be.oneOf([200, 201], 'message')
+        pm.expect(body.variable).to.be.eql('')
+    prerequests - javascript that runs before the request
+
+mini lecture#2 - vue tour
+
+
+mini lecture#3 - sockets
+
+
+
 
 
 
