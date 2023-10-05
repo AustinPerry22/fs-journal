@@ -1,15 +1,15 @@
 # Working in a Professional Environment
 01. What is Inheritance?
 
-> | ANSWER HERE |
+> Inheritance allows objects to inherit properties and function from there parent class
 
 02. What is the `Singleton` design pattern?
 
-> | ANSWER HERE |
+> A singleton design pattern only allows one instance of a class to exist.
 
 03. What is the `Observer` design pattern?
 
-> | ANSWER HERE |
+>  The observer design pattern uses one to many relationships and the objects are changed when the other object is changed
 
 04. What is the `Strategy` design pattern?
 

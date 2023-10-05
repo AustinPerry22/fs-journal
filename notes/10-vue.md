@@ -190,9 +190,61 @@ mini lecture #1  - postman tests
     prerequests - javascript that runs before the request
 
 mini lecture#2 - vue tour
+    install in client folder - npm i vue3-tour
+    in mainjs - import Vue3Tour from 'vue3-tour'
+                import 'vue3-tour/dist/vue3-tour.css'
+            under .use(router)
+                  .use(Vue3Tour)
+    in page 
+
+    on element use id to target it
+    at bottom of template
+    <v-tour name="myTour" :steps="steps" :callbacks="tourCallBacks">
+
+    </v-tour>
+    in return
+        steps:[{
+            target: {id: 'myElementId'},
+            header:{title: 'my header'},
+            content: 'here is the step component',
+            actions: {next: '<button>click me for next step</button>'},
+            params: {placement:'top'}
+        },
+        --other steps
+        ],
+
+        tourCallBacks:{   -built in methods
+            onFinish: (()=>{
+                stuff you want to happen here like push to anthter page
+                router.push({name:'myotherPage'})
+            })
+        }
+    in script tag outside of setup
+    mounted: function(){
+        this.$tours['myTour'].start()
+    }
+
+    to make tour a component use props of steps and callbacks in template use v-tour
+    use the mounted in the component also
+    build the steps in the return of the page with the component on it
+
+    in the accound schema make a needsTour boolean
+    in the account controller backend make an update account method
+    in the sanitize body method add needsTour
+    in the onfinish method also the onSkip method in the tourCallBacks edit account with needsTour: false
+    make sure to add needsTour to model and set the response to the appstate in account
+    on v-tour use v-if="account.needsTour" make sure to make account computed
+
+    MAKE SURE TO MAKE THE V-TOUR A COMPONENT
 
 
 mini lecture#3 - sockets
+
+mini lecture #4 - linkedin optimized
+    todo:
+        80-85 are not posted 
+        relavant and targeted
+        
 
 
 
