@@ -13,28 +13,28 @@
 
 04. What is the `Strategy` design pattern?
 
-> | ANSWER HERE |
+> The strategy design pattern uses classes that are able to change when the application is running.
 
 05. What is the `Factory` design pattern?
 
-> | ANSWER HERE |
+> The factory design pattern that creates objects from a design 
 
 06. What is test driven development?
-
-> | ANSWER HERE |
+> Test driven development is a way to develop by writting tests before developing the application
 
 07. In Scrum/Agile what is the DoD?
 
-> | ANSWER HERE |
+> DoD stands for the definition of done, it describes when a user story is working.
 
 08. Give two examples of a user story:
 
-> | ANSWER HERE |
+> I want a to click a button to like a post.   I want to be able to search for other users.
+
 
 09. During which ceremony is your Sprint Backlog created?
 
-> | ANSWER HERE |
+> The sprint backlog is created in the sprint planning ceremony.
 
 10. In which of these ceremonies are Tasks assigned to you?
 
-> | ANSWER HERE |
+> None, team members sign up for tasks in scrum.
