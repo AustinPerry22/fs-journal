@@ -43,12 +43,13 @@
 09. Demonstrate the necessary SQL for creating a table called `characters` with the values `name, age, description` as strings, and an `int` id.
 
   > CREATE TABLE characters (
-    name VARCHAR(25)
-    age VARCHAR(10)
+    name VARCHAR(255)
+    age VARCHAR(255)
     description VARCHAR(255)
-    id INT()
-  )
+    id int
+  );
 
 10. In SQL how can you query more than a single table? Provide an example.
 
-  > no idea
+  > SELECT allow you to query more than one table
+  > SELECT table1, table2
