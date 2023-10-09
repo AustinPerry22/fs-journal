@@ -1,4 +1,5 @@
 # CSharp
+no truthy or falsy values in c#
 Console.WriteLine("line")
 make sure to declare variable type
 double a = 5.55;
@@ -77,7 +78,7 @@ public class CatsController : ControllerBase{
         }
         catch (Exception e)
         {
-            return BadRequest(e);
+            return BadRequest(e.message);
         }
     }
 }
@@ -116,3 +117,7 @@ public class CatsRepository{
 in the startup.cs make sure to configure services/repository for the services/repository in use
 services.AddScoped<CatsRepository>();  -needs to be on top
 services.AddScoped<CatsService>();
+
+functions that return nothing use void
+
+c# can have the same function names if they have different types - overloading
