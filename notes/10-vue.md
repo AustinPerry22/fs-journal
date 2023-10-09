@@ -239,6 +239,62 @@ mini lecture#2 - vue tour
 
 
 mini lecture#3 - sockets
+    -opens a direct connection to server back and forth communication, no requests needed
+    -most network communication uses sockets
+
+    -in env.js use sockets = true
+    in network tab WS is where websocket stuff is
+        green messages your sending to server, red server sending to client
+    client has socket service and handler
+        -dont worry about socket service yet
+        handler is our stuff - similar to a controller
+            -looks for a message
+            super(io, socket)
+            this
+                .on('messagenmae', function)
+        no async becuase no need to wait for message
+
+        to send messages from client use socketService.emit('messagename', payload) - must be same message as in the service
+
+        in the server the testHandler
+            .on('messagename', function)
+            this.socket.emit('MEssage', 'booo!')
+        to message stuff from anywhere in the server
+        socketProvider.message('message', payload)
+
+        socketProvider.messageUser(userId, 'message', payload)
+
+        socketProvider.messageRoom('room' , 'message', payload) only people in the room
+        -you are joined into a room with your own id when logged in.
+
+
+        make a Room handler
+            extends sockethandler
+            .on('JOIN_Room' this.onJoinRoom)
+            .on('leaveRoom', this.leaveroom)
+
+            onJoinRoom(roomname){
+                this.socket.join(roomname)
+                this.messageUser(userId, 'Joined')
+            }
+            onLeaveRoom(roomname){
+                this.socket.leave(roomname)
+                this.messageUser(userId, 'Left')
+            }
+
+        rooms are for some messages for people but not all messages
+        to join room
+        socketProvider.message('JOIN_Room', roomname)
+        socketProvider.message('leaveRoom', roomname)
+
+        no longer need to do push res.data from post/put requests to appstate or else it will have 2
+
+
+
+
+
+
+
 
 mini lecture #4 - linkedin optimized
     todo:
