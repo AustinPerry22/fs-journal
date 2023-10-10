@@ -138,3 +138,27 @@ internal List<Car> GetAllCars()
     string sql = "SELECT * FROM cars;";  - sad spider ;";
     List<Car> cars = _db.Query<Car>(sql).ToList(); -the type takes the rows and turns them into a car
 }
+
+to avoid SQL interjection attacks use the stuff below instead of string interpolation.
+pass a key value into the query to match and pull
+string sql = "SELECT * FROM cars WHERE id = @cardId;"
+Car car = _db.Query<Car>(sql, new {cardID}).FirstOrDefault();
+return car
+
+to make a multiline string
+string sql = @"
+    sql stuff
+    more sql stuff
+    more sql stuff
+    more sql stuff
+    (@make, @model, @year)
+"
+
+run sql in dbsetup then bring over as a string into the repostitory in c#
+
+you can make data types nullable by doing int?
+origninal.ImgUrl = updateData.ImgUrl ?? origninal.ImgUrl;  - null checker
+
+
+
+
