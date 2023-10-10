@@ -123,61 +123,18 @@ functions that return nothing use void
 c# can have the same function names if they have different types - overloading
 
 
-MySQL.org
+ONCE WE HAVE OUR DB CREATED WE WON"T USE CONSTRUCTORS IN THE MODEL.
 
-massive excel spreadsheet
-with cols and row
-define table before storing data in it
+in the repository
 
-casing doesn't matter
+private readonly IDbConnection _db;
+public CarsRepository(IDbConnection _db)
+{
+    _db = db;
+}
 
-
-TEXT - uncapped length
-VARCHAR(255) -how many bytes
-BOOLEAN - true or false
-DATETIME - dated
-INT
-BIGINT
-DOUBLE
-FLOAT
-
-
-
-CREATE TABLE hotdogs(
-    id INT AUTO_INCREMENT PRIMARY KEY, -adds 1 to the id every time hotdog is added, primary key organize by id.
-    bun VARCHAR (1000),
-    date DATETIME DEFAULT CURRENT_TIMESTAMP,
-)
-
-needs to be executed to run
-
-INSERT INTO hotdogs
-(name)
-VALUES
-(myhotdog)
-
-SELECT name, data FROM hotdogs;   - gets all names and dates from the table. * selects all columns
-SELECT name, FROM hotdogs WHERE 'hasKetchup' = true AND price < 2; 
-// - returns the names where the hasketchup column is true AND the price is < 2. AND AND AND.
-WHERE description LIKE '%jalapeno%';   - gets stuff where a jalapeno is in the description %-wildcard character.
-
-ORDER BY name DESC -orders the table by decending name
-LIMIT 2 OFFSET 1- limits the result to 2 rows, skips the first dog
-
-SELECT  -order matters in sql
-    name,
-    price
-FROM hotdogs
-WHERE price < 30
-ORDER BY price;
-
-DELETE FROM hotdogs; -deletes entire table
-DELETE FROM hotdogs WHERE id = 5;
-
-UPDATE hotdogs
-SET price = 5
-WHERE id = 1;
-
-UPDATE hotdogs
-SET price = price /2
-WHERE price > 5;
+internal List<Car> GetAllCars()
+{
+    string sql = "SELECT * FROM cars;";  - sad spider ;";
+    List<Car> cars = _db.Query<Car>(sql).ToList(); -the type takes the rows and turns them into a car
+}
