@@ -181,6 +181,42 @@ FROM mytable mt
 JOIN othertable ot 
 ON ot.id = mt.creatorId;
 
+start from repository - service - controller - startup for dependency stuff
+
+the singleton is used throughout the entire application the addscoped creates a new instance for the scope of the http methods.
+
+no more virtuals use the class type
+
+-make sure the order is same as where the select is
+_db.Query <Album, Acount, Album>(sql, (album,creator)=>
+{
+    album.Creator = creator;
+}) -last argument is the return type of the internal in the list cuase it smooshes the first two together kinda?
+
+to pass in the creator id for posting/editing/deleting use auth0 in the controller
+
+private readonly Auth0Provider _auth0;
+
+in the request make it async <Task<myType>> Create([FromBody] Album albumdata) - task needs to be on async.
+{
+    try{
+        Account userInfo = await _auth0.GetUserInfoAysnc<Account>(HttpContext);
+        albumData.CreatorId = userInfo.id
+        normal stuff after here
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
