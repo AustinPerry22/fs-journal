@@ -197,6 +197,8 @@ to pass in the creator id for posting/editing/deleting use auth0 in the controll
 
 private readonly Auth0Provider _auth0;
 
+[Authorize]
+[HttpPost]
 in the request make it async <Task<myType>> Create([FromBody] Album albumdata) - task needs to be on async.
 {
     try{
@@ -205,6 +207,11 @@ in the request make it async <Task<myType>> Create([FromBody] Album albumdata) -
         normal stuff after here
     }
 }
+
+return from the service for edits just make sure to save in the repo
+
+
+
 
 
 
