@@ -161,4 +161,26 @@ origninal.ImgUrl = updateData.ImgUrl ?? origninal.ImgUrl;  - null checker
 
 
 
+WEDNESSDAY
+
+appsetting.Develpoment = where to add auth settings
+make sure to create the account table
+make sure your base url is correct https  7045
+
+play around in the sql file before just adding stuff to the sql string
+
+FOREIGN KEY (myvalue) REFERENCE othertable(whatitscalledinothertable) ON DELETE CASCADE - if othertable(thing) is deleted then CASCADE, deletes the rows where the thing is the same
+
+SELECT * FROM mytable JOIN othertable;
+
+write out complex sql statments in mutiple lines for clarity/logic stuff
+
+SELECT 
+mt.*, ot.name
+FROM mytable mt 
+JOIN othertable ot 
+ON ot.id = mt.creatorId;
+
+
+
 
