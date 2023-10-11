@@ -51,5 +51,5 @@
 
 10. In SQL how can you query more than a single table? Provide an example.
 
-  > SELECT allow you to query more than one table
-  > SELECT table1, table2
+  > FROM allows you to use multiple tables
+  > SELECT results FROM table1, table2
