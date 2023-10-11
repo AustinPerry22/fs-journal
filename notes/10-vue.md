@@ -296,10 +296,6 @@ mini lecture#3 - sockets
 
 
 
-mini lecture #4 - linkedin optimized
-    todo:
-        80-85 are not posted 
-        relavant and targeted
         
 
 
