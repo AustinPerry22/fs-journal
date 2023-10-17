@@ -210,6 +210,21 @@ in the request make it async <Task<myType>> Create([FromBody] Album albumdata) -
 
 return from the service for edits just make sure to save in the repo
 
+services should only talk to their respective repository.
+
+ExecuteScalar will return a single cell instead of a row like Query will.
+
+view models not vue models
+
+
+public class AccountCollabViewModel : Account
+{
+public int CollabId {get;set;}
+}
+
+
+
+
 
 
 
