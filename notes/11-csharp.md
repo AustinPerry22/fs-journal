@@ -222,6 +222,36 @@ public class AccountCollabViewModel : Account
 public int CollabId {get;set;}
 }
 
+MANY TO MANY
+
+for many to many tables
+id
+relashionship1 id
+relashionship 2 id
+
+foreign keys ON DELETE CASCADE
+
+For Posting a many to many
+    -return the thing you want back probably a cultist or cult/recipe
+    -in the service make sure to get/return the cultist/cult
+    -in the repository
+        <!-- MAKE A NEW CULTMEMBER -->
+        INSERT INTO cultMembers
+        (cultId, accountId)
+        VALUES
+        (@cultId, @accountId)
+        <!-- RETURN THE CULTIST make sure to use a class extension on the profile/cult -->
+        SELECT cultMembers*, accounts* FROM cultMembers
+        JOIN accounts ON accounts.id = cultMembers.accountId
+        WHERE cultMembers.id = LAST_INSERT_ID()
+
+        cast your account into a cultist
+        
+
+
+
+
+
 
 
 
