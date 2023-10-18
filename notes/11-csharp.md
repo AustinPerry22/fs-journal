@@ -284,7 +284,7 @@ don't use interfaces for services or business logic.
 
 use null check on get by Id
 
-
+do cool logic in the backend based on account/ etc ex get all things if i own them and not closed or get all things that aren't closed
 
 
 
