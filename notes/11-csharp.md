@@ -246,7 +246,37 @@ For Posting a many to many
         WHERE cultMembers.id = LAST_INSERT_ID()
 
         cast your account into a cultist
-        
+use user.isAuthenticated instead of account.id
+
+script setup is used for small things without much functionality
+
+
+
+Interfaces
+-stuff inherits from this and must have these properties, what i want a class to have
+-great for when everything has the same stuff ex. repoitem -  id updated at, created at.
+
+IRepository  - always prefaced with I
+namespace App.Interfaces;
+public interface IRepository<T, Tid>; -make sure the types are vars so you can pass in any type
+{
+    List<T> Get();      -don't actually write out the methods becuase they are all unique
+
+    T GetById(Tid id); -instance of Tid
+
+    T Create(T newData); -instance of type
+
+    public int Update(T updateData);
+
+    public int Delete(Tid id);
+}
+
+to use it 
+using App.Interfaces;
+public class MyRepository : IRepository<MyModel, int>   ctrl . implement new  thing and builds out repo functions
+
+
+
 
 
 
