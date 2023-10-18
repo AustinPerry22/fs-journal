@@ -262,7 +262,7 @@ public interface IRepository<T, Tid>; -make sure the types are vars so you can p
 {
     List<T> Get();      -don't actually write out the methods becuase they are all unique
 
-    T GetById(Tid id); -instance of Tid
+    internal T GetById(Tid id); -instance of Tid
 
     T Create(T newData); -instance of type
 
@@ -274,6 +274,17 @@ public interface IRepository<T, Tid>; -make sure the types are vars so you can p
 to use it 
 using App.Interfaces;
 public class MyRepository : IRepository<MyModel, int>   ctrl . implement new  thing and builds out repo functions
+
+if you delete or change a function it would break the contract and give you error
+adding functions doesn't break the contract
+
+Interfaces should not be responsible for instanctiating things.
+so no private readonly IDbconnection _db; or stuff like it.
+don't use interfaces for services or business logic.
+
+use null check on get by Id
+
+
 
 
 
