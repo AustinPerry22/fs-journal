@@ -286,24 +286,13 @@ use null check on get by Id
 
 do cool logic in the backend based on account/ etc ex get all things if i own them and not closed or get all things that aren't closed
 
+to join multiple tables use differnet variabiles when using the same table
 
+JOIN - if i can't join anything don't include the row
+LEFT JOIN - gets back other stuff but the stuff to join on stuff is null. includes row
 
+COUNT(reports.id) as reportCount - gets the count for the duplicate where the id is the same
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+GROUP BY (restaurant.id) - groups the restraunt data together so no duplicates 
+group by statements go last
 
