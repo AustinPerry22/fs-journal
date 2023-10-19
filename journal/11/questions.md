@@ -17,7 +17,7 @@
 
 5. What is an ***alias***?
 
-  > 
+  > An alias is a way to refernce something by using the name you alias the code out as.
 
 6. Demonstrate how you would query a join statement that would get all of a doctors patients from the following collections:
 
@@ -47,4 +47,8 @@
 
   ```
 
-  > | ANSWER HERE |
+  > SELECT
+    pat-doc.*,
+    pat.*
+    FROM patient_doctors pat-doc WHERE doctorId = @doctorId
+    JOIN patients pat ON patients
