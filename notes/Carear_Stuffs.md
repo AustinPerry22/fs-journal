@@ -4,16 +4,6 @@ mini lecture #4 - linkedin optimized
         80-85 are not posted 
         relavant and targeted
 
-
-request linkedin review
-
-sign up for linkedin review
-start networking
-
-add a shitload of skills ~ 45
-
-look at tyler rice's linkedin yoink it
-
 involta tech gems networking, jason murtz?
 
 have to do virtual networking.
@@ -30,7 +20,7 @@ shotgunning still kinda works
 follow up application's within 24hr
 always end on a call to action - what are the next steps?
 
-if you don't want job recommend other ppl
+if you don't want that job recommend other ppl
 
 next checkpoint is getting a job
 
