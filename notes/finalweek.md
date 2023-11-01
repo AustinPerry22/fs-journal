@@ -40,10 +40,20 @@ sudo apt install mysql-server -y
 sudo systemctl enable mysql
 sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'my password';
-to reaccess your mysql use
+to re-access your mysql use
 sudo mysql -p
 exit
 sudo mysql_secure_instillation
 y
 
-\*a mysql server can have as many databases as you want
+a mysql server can have as many databases as you want
+
+linting and testing hugely important
+
+YAML
+
+cloudflare everything from cloudflare
+A records are ip addresses
+make sure to update auth0 application uri's
+
+do a production branch in github so your not always doing actions
